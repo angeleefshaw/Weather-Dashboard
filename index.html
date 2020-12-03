@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather Forecaster</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style.css"> 
+</head>
+
+<body>
+    <header>
+        <p class = "header"> Weather Dashboard </p>
+    </header>
+    <!-- <card class="card">
+      <div class= "container">
+      <div>Your Weather Forecast</div>
+      <div class= "error"></div>
+      <div class= "weather-container">
+        <img src="">
+        <p class=temperature-value> temperature display </p>
+        <p class=temperature-description> description  </p>
+        <p class=temperature-location> location, location USA</p>
+      </div>
+      </div>
+    </card> -->
+    <div class="side-search-bar">
+        <form>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="search" class="sr-only"> </label>
+                <input type="text" class="form-control" id="inputCity" placeholder= "City">
+                <input type="text" class="form-control" id="inputState" placeholder= "State">
+              </div>
+              <button type="submit" class="btn btn-primary mb-2" id= "search">Search</button>
+        </form>
+    </div>
+    <div class= "main-content">
+        <div id="dash-display">
+            <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>  
+        <span></span>
+        </div>
+        <div class= "five-card'display">
+            <div class="card-deck">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type = text/javascript>
+    
+     // const weatherCall = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=12180775d2305afdf930151d50f1ebc2'
+
+
+    // const query = 'api.openweathermap.org/data/2.5/forecast?q=' 
+    // const userInputs = cityAndStateInput.toString()
+    // const api = '&appid=12180775d2305afdf930151d50f1ebc2'
+    // const citySearch = query + userInputs + api
+
+    
+
+    // const cityAndStateInput = [];
+
+        function runCall() {
+            $.ajax({
+                url:'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid=12180775d2305afdf930151d50f1ebc2',
+                method:"get"
+                }).then(function(response) {
+                console.log(response)
+            })
+        }
+        
+
+        $('#search').on("click", function() {
+            alert("test");
+            runCall();
+            return false;
+        })
+       
+
+        // const queryTerm = $('#inputCity').val()
+        
+        // const stateCode = $('#inputState').val().trim()
+
+        // cityAndStateInput.push(queryTerm + stateCode
+
+  //api key 12180775d2305afdf930151d50f1ebc2
+  
+  </script>
+</body>
+</html>

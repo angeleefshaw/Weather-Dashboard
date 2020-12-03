@@ -1,0 +1,51 @@
+/* body {
+    background-color: #f9fbfd;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color:black; 
+  }
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    /* color: darkgray; */
+    /* font-size: 16px;
+    margin: auto;
+    max-width: 500px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-blend-mode: color-burn;
+    background-color: darkgrey;
+  } */ */
+
+  body p {
+    max-width: 100%;
+    height: 100px;
+    background-color: blue; 
+    color: white;
+    text-align: center;
+  }
+
+  .header {
+      height: 900px;
+  }
+  .container {
+      display: contents;
+  }
+
+  .main-content {
+      float: right;
+      max-width: 1100px;
+  }
+
+  .side-search-bar {
+    float: left;
+    max-width: 300px;    }
